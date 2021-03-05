@@ -29,7 +29,7 @@ default_values = '''#       ________                                     ____  _
 OxygenX:
 
   # Check if current version of OxygenX is latest
-  check_for_updates: true
+  check_for_updates: false
 
   # Amount of checks for a account many times to check a account. will be slower if retries is set higher
   # Needs to be 1 or higher (Recommanded: 1-2 for paid proxies, 3-6 for public proxies.)
@@ -39,7 +39,7 @@ OxygenX:
   timeout: 6000
 
   # Threads for account checking
-  threads: 200
+  threads: 100
   
   # Remove all duplicates in combolist
   combo_duplicates: true
@@ -57,7 +57,7 @@ OxygenX:
   print_bad: true
   
   # Save bad accounts
-  save_bad: true
+  save_bad: false
 
   # Normal users should keep this false unless problem start happening
   debugging: false
@@ -72,15 +72,15 @@ OxygenX:
 
   rank:
   # Set true if you want to check the ranks/level
-    mineplex: true
+    mineplex: false
     hypixel:  true
-    hivemc: true
-    veltpvp: true
+    hivemc: false
+    veltpvp: false
 
   level:
     # Save High leveled accounts in files.
     hypixel: true
-    mineplex: true
+    mineplex: false
     
     # Minimum high level accounts
     hypixel_level: 25
